@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Grid</title>
+<style>
+.container{
+display:grid;
+gap:10px;
+grid-template-areas:
+'Header Header Header Header Header '
+'Content Content Content Content Portfolio '
+'Content Portfolio Portfolio Portfolio Portfolio'
+'Left content Left content Left content Left content Right content'
+'Left content Right content Right content Right content Right content'
+'Footer Footer Footer Footer Footer';
+background-color:aqua;
+}
+.item{
+padding:12px;
+background-color:steelblue;
+border:1px solid red;
+}
+@media(max-width:500px{
+.container{
+grid-template-areas:'Header Header  Header  Header'
+'Content Content Content Content'
+'Portfolio Portfolio Portfolio Portfolio'
+'Left content Left content Left content Left content'
+'Right content Right content Right content Right content'
+'Footer Footer Footer Footer';
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="item">Header</div>
+<div class="item">Content</div>
+<div class="item">Portfolio</div>
+<div class="item">Left content</div>
+<div class="item">Right content</div>
+<div class="item">Footer</div>
+</body>
+</html>
