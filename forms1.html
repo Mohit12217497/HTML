@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Forms</title>
+<style>
+input[type=text]{
+margin:8px 8px 8px 8px;
+padding:12px;
+width:70%;
+background-color:white;
+}
+input[type=submit]{
+width:40%
+color:red;
+background-color:aqua;
+}
+</style>
+</head>
+<body>
+<form action="server.php">
+<fieldset>
+<legend>Feedback</legend>
+First Name: <input type="text"/><br>
+Roll no.: <input type="Number" value=""/><br>
+password: <input type="password" placeholder="Please enter password"/><br>
+E-mail: <input type="email"/><br>
+Range: <input type="range"/><br>
+<input type="submit"/><br>
+<input type="reset"/><br>
+<label for="dropdown">state</label>
+<select name="dropdown">
+<option value="MP"><Madhya pradesh</option>
+<option value="PB">Punjab</option>
+<option value="UP">Uttar Pradesh</option>
+<option value="JK">Jammu kashmir</option>
+</select><br>
+<label for="messsage">Message</label>
+<textarea name="message" rows="10" cols="50"></textarea><br>h
+<input type="file" accept="/image"/>
+<input type="submit"/> &nbsp
+<input type="reset"/>
+</fieldset>
+</form>
+</body>
+</html>
